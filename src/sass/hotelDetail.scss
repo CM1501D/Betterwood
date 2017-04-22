@@ -1,0 +1,543 @@
+*,*:before,*:after{
+	box-sizing:border-box;
+}
+
+body,html{
+	width:100%;
+	height:100%;
+}
+.hotelDetail_wrap{
+	display:flex;
+	overflow:hidden;
+	flex-direction:column;
+	width:100%;
+	height:100%;
+	background:#FFFFFF;
+	.hotelDetail_title{
+		width:100%;
+		height:45px;
+		position:relative;
+		line-height:45px;
+		span{
+			position:absolute;
+			left:14px;
+			top:0;
+		}
+		h2{
+			width:100%;
+			text-align:center;
+		}
+	}
+	.hotelDetail_con{
+		width:100%;
+		flex:1;
+		overflow:auto;
+		.hotelDetail_view{
+			width:100%;
+			height:155px;
+			position:relative;
+			margin-bottom:13px;
+			img{
+				width:100%;
+				height:100%;
+			}
+			.lookUp_pics{
+				position:absolute;
+				right:0;
+				bottom:15px;
+				width:90px;
+				height:30px;
+				background:#000;
+				color:#fff;
+				text-align:center;
+				line-height:30px;
+			}
+		}
+		.hotelDetail_content{
+			width:100%;
+			overflow:hidden;
+			.hc_nav{
+				width:100%;
+				padding:0 10px;
+				div{
+					width:100%;
+					display:flex;
+					border:1px solid $dimcolor;
+					border-radius:5%;
+					span{
+						flex:1;
+						text-align:center;
+						padding:8px 0;
+						color:$dimcolor;
+						&.high{
+							background:$dimcolor;
+							color:#fff;
+						}
+					}
+				}
+			}
+			.hc_con{
+				width:100%;
+				.hc_wrap{
+					width:200%;
+					height:100%;
+					transition:transform ease 0.3s;
+					div{
+						float:left;
+						width:50%;
+						height:100%;
+						&.show{
+							display:block;
+						}
+						&.hide{
+							display:none;
+						}
+					}
+					.info_con{
+						h2{
+							color:#000;
+							line-height:50px;
+							border-bottom:1px solid #ccc;
+							padding-left:15px;
+						}
+						p{
+							line-height:42px;
+							border-bottom:1px solid #ccc;
+							padding-left:20px;
+							color:#606060;
+						}
+					}
+				}
+
+			}
+		}
+		.modifyDate_con{
+			width:100%;
+			display:flex;
+			line-height:54px;
+			border-bottom:1px solid #ccc;
+			p{
+				flex:1;
+				text-align:center;
+				color:#666;
+				&:nth-child(3){
+					text-align:right;
+					color:$dimcolor;
+					margin-right:5px;
+				}
+			}
+
+		}
+		.reserveCon{
+			width:100%;
+			height:250px;
+			overflow:hidden;
+			border-bottom:1px solid #ccc;
+			p{
+				width:100%;
+				display:flex;
+				align-items:center;
+				padding-left:20px;
+				line-height:80px;
+				.bigBed{
+					width:70%;
+					flex-direction:column;
+					position:relative;
+					em{
+						font-style:normal;
+						position:absolute;
+						left:0;
+						top:20px;
+						font-size:14px;
+						color:#333;
+					}
+				}
+				.price{
+					flex:1;
+					text-align:center;
+					color:$orange;
+					margin-right:10px;
+				}
+				.order{
+					flex:1;
+					text-align:center;
+					display:inline-block;
+					height:30px;
+					line-height:30px;
+					border:1px solid $dimcolor;
+					color:$dimcolor;
+					margin-right:10px;
+					&.over{
+						background:#E3E7EA;
+						border:1px solid #AFB0B2;
+						color:#AFB0B2;
+					}
+				}
+			}
+		}
+		.spread{
+			width:100%;
+			text-align:center;
+			color:#333;
+			margin-top:10px;
+		}
+		.hotel_in_around{
+			width:100%;
+			height:250px;
+			overflow:hidden;
+			&>h2{
+				width:100%;
+				padding-left:10px;
+			}
+			.hotel_in_around_wrap{
+				width:100%;
+				dl{
+					width:100%;
+					padding:19px 0;
+					display:flex;
+					align-items:top;
+					border-bottom:1px solid #ccc;
+					dt{
+						margin:0 10px;
+						width:70px;
+						height:70px;
+						img{
+							width:100%;
+							height:100%;
+						}
+					}
+					dd{
+						flex:1;
+						width:70%;
+						h2{
+							font-size:14px;
+							color:#333333;
+						
+						}
+						p{
+							line-height:18px;
+							width:100%;
+							&:nth-child(2){
+								
+								.score{
+									color:#333333;
+									font-size:14px;
+								}
+								.li{
+									background:#F68F2A;
+									padding:2px;
+									border-radius:15%;
+									font-size:14px;
+									color:#fff;
+								}
+								.priceStart{
+									float:right;
+									margin-right:10px;
+									em{
+										color:#F68F2A;
+										padding-right:5px;
+										font-style:normal;
+									}
+								}
+							}
+							&:nth-child(3){
+								font-size:14px;
+								color:#8F8F8F;
+								.icon-p{
+									font-size:12px;
+								}
+
+							}
+							&:nth-child(4){
+								font-size:14px;
+								color:#8F8F8F;
+								
+								.address{
+									width:75%;
+									float:left;
+									overflow:hidden;
+									text-overflow:ellipsis;
+									white-space: nowrap;
+								}
+								.distance{
+									float:right;
+									margin-right:10px;
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		.special_price{
+			width:100%;
+			&>h2{
+				width:100%;
+				line-height:44px;
+				padding-left:10px;
+			}
+			.special_price_wrap{
+				width:100%;
+				dl{
+					width:100%;
+					padding:19px 0;
+					display:flex;
+					align-items:top;
+					border-bottom:1px solid #ccc;
+					dt{
+						margin:0 10px;
+						width:70px;
+						height:70px;
+						img{
+							width:100%;
+							height:100%;
+						}
+					}
+					dd{
+						flex:1;
+						width:70%;
+						h2{
+							font-size:14px;
+							color:#333333;
+						
+						}
+						p{
+							line-height:18px;
+							width:100%;
+							&:nth-child(2){
+								
+								.score{
+									color:#333333;
+									font-size:14px;
+								}
+								.li{
+									background:#F68F2A;
+									padding:2px;
+									border-radius:15%;
+									font-size:14px;
+									color:#fff;
+								}
+								.priceStart{
+									float:right;
+									margin-right:10px;
+									em{
+										color:#F68F2A;
+										padding-right:5px;
+										font-style:normal;
+									}
+								}
+							}
+							&:nth-child(3){
+								font-size:14px;
+								color:#8F8F8F;
+								.icon-p{
+									font-size:12px;
+								}
+
+							}
+							&:nth-child(4){
+								font-size:14px;
+								color:#8F8F8F;
+								
+								.address{
+									width:75%;
+									float:left;
+									overflow:hidden;
+									text-overflow:ellipsis;
+									white-space: nowrap;
+								}
+								.distance{
+									float:right;
+									margin-right:10px;
+								}
+							}
+						}
+
+					}
+				}
+			}
+		}
+	}
+	
+}
+.mark{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.5);
+	position:absolute;
+	transform:translate3d(0,100%,0);
+	transition:transform 0.3s ease-in;
+	left:0;
+	top:0;
+	z-index:1;
+	.hotel_standard{
+		display:flex;
+		flex-direction:column;
+		position:absolute;
+		left:0;
+		bottom:0;
+		top:200px;
+		width:100%;
+		background:#fff;
+		.hotel_info{
+			width:100%;
+			display:flex;
+			
+			dt{
+				width:70px;
+				height:70px;
+				margin:15px;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+			dd{
+				flex:1;
+				display:flex;
+				flex-direction:column;
+				margin-top:15px;
+				h2{
+					flex:1;
+					position:relative;
+					.close{
+						position:absolute;
+						right:10px;
+						top:0;
+					}
+				}
+				.orderPrice{
+					color:$orange;
+					flex:1;
+				}
+				.orderPromise{
+					width:40px;
+					height:20px;
+					text-align:center;
+					background:$orange;
+					color:#fff;
+					border-radius:10%;
+					flex:1;
+				}
+			}
+		}
+		.hotel_detail-info{
+			display:flex;
+			flex-direction:column;
+			flex:1;
+			width:100%;
+			padding:0 15px;
+			p{
+				flex:1;
+				display:flex;
+				align-items:center;
+				span{
+					&:nth-child(1){
+						width:20%;
+					}
+					&:nth-child(2){
+						flex:1;
+						text-align:right;
+					}
+					.circle{
+						display:inline-block;
+						width:15px;
+						height:15px;
+						background:#ccc;
+						border-radius:100%;
+						margin-right:10px;
+					}
+				}
+				
+			}
+		}
+		.orderRightNow{
+			width:100%;
+			height:49px;
+			background:$dimcolor;
+			line-height:49px;
+			text-align:center;
+			a{
+				color:#fff;
+			}
+		}
+	}
+}
+.mark-show{
+	transform:translate3d(0,0,0);
+}
+.tel_mark{
+	height:100%;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,.5);
+	z-index:2;
+	transform:translate3d(0,100%,0);
+	transition:transform 0.3s ease-in;
+	.tel_con{
+		position:absolute;
+		width:100%;
+		bottom:0;
+		left:0;
+		.cancel{
+			width:100%;
+			line-height:50px;
+			color:$dimcolor;
+			text-align:center;
+			background:#fff;
+			margin-top:10px;
+		}
+		.telphone{
+			width:100%;
+			background:#fff;
+			.top{
+				p{
+					line-height:40px;
+					text-align:center;
+
+				}
+				border-bottom:1px solid #ccc;
+			}
+			.call{
+				text-align:center;
+				line-height:50px;
+				color:red;
+			}
+		}
+	}
+}
+.tel_mark-show{
+	transform:translate3d(0,0,0);
+}
+
+.img_con{
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.5);
+	position:absolute;
+	transition:transform ease 0.2s;
+	transform:translate3d(100%,0,0);
+	left:0;
+	top:0;
+	z-index:5;
+	
+	.img_wrap{
+		width:100%;
+		height:120px;
+		position:absolute;
+		top:50%;
+		transform:translate3d(0,-50%,0);
+		background:#fff;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+}
+.img_con-show{
+	transform:translate3d(0,0,0);
+}

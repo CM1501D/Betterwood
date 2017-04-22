@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>hotelList</title>
+	<link rel="stylesheet" href="../../font/iconfont.css">
+	<link rel="stylesheet" href="../../dist/css/reset.css">
+	<link rel="stylesheet" href="../../public/css/style.css">
+</head>
+<body>
+	<div class='hotelList_Wrap'>
+		<header class='hotelList_header'>
+			<span class='iconfont icon-youjiantou back'></span>
+			<h2>343酒店</h2>
+		</header>
+		<div class='hotelList_title'>
+			<span>
+				<em>入住</em>
+				<i class='checkInDate'>7月8日</i>
+			</span>
+			<span>
+				<em>离店</em>
+				<i class='checkOutDate'>7月8日</i>
+			</span>
+			<span class='modify'>
+				<em>修改</em>
+				<i class='iconfont icon-jiantouyou'></i>
+			</span>
+		</div>
+		<div class='hotelList_Con'>
+			<div>没有更多内容了</div>
+			<!-- <dl>
+				<dt><img src="../../img/hotel.jpg"></dt>
+				<dd>
+					<h2>北京王府井希尔顿酒店</h2>
+					<p>
+						<span class='score'>4.7分</span>
+						<span class='li'>礼</span>
+						<span class='priceStart'><em>￥55</em>起</span>
+					</p>
+					<p>
+						<span>经济型</span>
+						<span class='iconfont icon-wifi'></span>
+						<span class='iconfont icon-p'></span>
+					</p>
+					<p>
+						<span class='address'>广州市越秀区长堤大马路320号</span>
+						<span>0.8km</span>
+					</p>
+				</dd>
+			</dl> 
+			<dl>
+				<dt><img src="../../img/hotel.jpg"></dt>
+				<dd>
+					<h2>北京王府井希尔顿酒店</h2>
+					<p>
+						<span class='score'>4.7分</span>
+						<span class='li'>礼</span>
+						<span class='priceStart'><em>￥5</em>起</span>
+					</p>
+					<p>
+						<span>经济型</span>
+						<span class='iconfont icon-wifi'></span>
+						<span class='iconfont icon-p'></span>
+					</p>
+					<p>
+						<span class='address'>广州市越秀区长堤大马路320号</span>
+						<span>0.8km</span>
+					</p>
+				</dd>
+			</dl>  --> 
+		</div>
+		<footer class='hotelList_footer'>
+			<nav class='hotelList_nav'>
+				<span class='iconfont icon-shangjiantou' index='0'>排序</span>
+				<span class='iconfont icon-shangjiantou' index='1'>价格</span>
+				<span class='iconfont icon-shangjiantou' index='2'>区域</span>
+				<span class='iconfont icon-shangjiantou' index='3'>星级</span>
+			</nav>
+		</footer>
+		<div class='mark'>
+			<div class='filter-area'>
+					<div class='filter-item arrange'>
+						<p class='iconfont icon-checkbox' arrange='up' condition='price'>价格由高到底</p>
+						<p class='iconfont icon-checkbox' arrange='down' condition='price'>价格由低到高</p>
+						<!-- <p class='iconfont icon-checkbox' arrange='up' condition='score'>评分由高到低</p>
+						<p class='iconfont icon-checkbox' arrange='down' condition='score'>评分由低到高</p> -->
+						<p class='iconfont icon-checkbox' arrange='up' condition='distance'>距离由远到近</p>
+						<p class='iconfont icon-checkbox' arrange='down' condition='distance'>距离由近到远</p>
+					</div>
+					<div class='filter-item price'>
+						价格区域
+					</div>
+					<div class='filter-item region'>
+						<p class='iconfont icon-checkbox' region='海淀区'>海淀区</p>
+						<p class='iconfont icon-checkbox' region='朝阳区'>朝阳区</p>
+						<p class='iconfont icon-checkbox' region='大兴区'>大兴区</p>
+						<p class='iconfont icon-checkbox' region='丰台区'>丰台区</p>
+						<p class='iconfont icon-checkbox' region='东城区'>东城区</p>
+						<p class='iconfont icon-checkbox' region='西城区'>西城区</p>
+					</div>
+					<div class='filter-item rank'>
+						<!-- <p class='iconfont icon-checkbox' rank=''>不限</p> -->
+						<p class='iconfont icon-checkbox' rank='二星以下/经济型'>二星以下/经济型</p>
+						<p class='iconfont icon-checkbox' rank='三星'>三星</p>
+						<p class='iconfont icon-checkbox' rank='四星'>四星</p>
+						<p class='iconfont icon-checkbox' rank='五星'>五星</p>
+					</div>
+			</div>
+		</div>
+
+		<!-- <div class='loading'>
+			<div class='load_wrap'>
+				<div class="circle circle-index1"></div>
+				<div class="circle circle-index2"></div>
+				<div class="circle circle-index3"></div>
+				<div class="circle circle-index4"></div>
+				<div class="circle circle-index5"></div>
+				<div class="circle circle-index6"></div>
+				<div class="circle circle-index7"></div>
+				<div class="circle circle-index8"></div>
+			</div>
+		</div> -->
+	</div>
+	<div class='selectCity' id='calendar-wrap'>
+		<div class="header calendar_header">
+			<span class='back iconfont icon-youjiantou calendar_back'></span>
+			<h2>343间酒店</h2>
+			<span class='finish'>完成</span>
+		</div>
+		<div class='checkInTime'>
+			选择入住时间
+		</div>
+		<div class='calendar_title'>
+			<span class='iconfont icon-youjiantou prev'></span>
+			<h3>2014年7月</h3>
+			<span class='iconfont icon-jiantouyou next'></span>
+		</div>
+		<div class='calendar_con'>
+			<div class='calendar_week'>
+				<span>周日</span>
+				<span>周一</span>
+				<span>周二</span>
+				<span>周三</span>
+				<span>周四</span>
+				<span>周五</span>
+				<span>周六</span>
+			</div>
+			<div class='calendar_month'>
+				
+			</div>
+		</div>
+		<div class='bottom'>
+			<span>入住日</span>
+			<span class='checkDate'>7月16日</span>
+		</div>
+		<div class='checkInDays'>
+			<span>住几晚</span>
+			<span>
+				<em class='del'>-</em>
+				<input type="number" value='1' class='countNight'>
+				<em class='add'>+</em>
+			</span>
+		</div>
+	</div>
+	<script src='../../public/js/list.js'></script>
+</body>
+</html>

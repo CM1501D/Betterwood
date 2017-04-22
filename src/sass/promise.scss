@@ -1,0 +1,63 @@
+
+.promise_wrap{
+	width:100%;
+	height:100%;
+	background:#fff;
+	box-sizing:border-box;
+	.writeOrder_title{
+		width:100%;
+		.write_back{
+			font-size:14px;
+			color:$dimcolor;
+		}
+	}
+	.promise_con{
+		width:100%;
+		.card_info{
+			width:100%;
+			p{
+				line-height:48px;
+				background:#cecece;
+				text-indent:15px;
+			}
+			div{
+				line-height:48px;
+				display:flex;
+				padding-left:10px;
+				label{
+					width:30%;
+				}
+				input{
+					flex:1;
+					border:none;
+					outline:none;
+					text-indent:15px;
+				}
+			}
+			.banks{
+				width:100%;
+				position:relative;
+				span{
+					position:absolute;
+					right:20px;
+					top:0;
+					color:$dimcolor;
+					font-size:14px;
+				}
+			}
+			
+		}
+		.pay_promsie,.punish_rule{
+			width:100%;
+			padding:10px;
+			border-bottom:1px solid #ccc;
+			h2{
+				color:#E7553E;
+				line-height:44px;
+			}
+			p{
+				color:#686868;
+			}
+		}
+	}
+}

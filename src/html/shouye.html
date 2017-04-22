@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>酒店预订</title>
+	<link rel="stylesheet" href="../../dist/css/reset.css">
+	<link rel="stylesheet" href="../../public/css/style.css">
+	<link rel="stylesheet" href="../../lib/swiper.css">
+	<link rel="stylesheet" href="../../font/iconfont.css">
+</head>
+<body>
+	<div class='wrap'>
+		<div class='container'>
+			<div class='banner swiper-container'>
+				<ul class='swiper-wrapper'>
+					
+				</ul>
+				<span class='banner-info'>酒店预订</span>
+			</div>
+			<div class='stayInfo'>
+				<div class='stay check-in-hotel'>
+					<span class='circle'></span>
+					<span class='stayItem'>入住地</span>
+					<span class='stayPlace'>广州<em class='iconfont icon-jiantouyou '></em></span>
+					<!-- <span class='iconfont icon-jiantouyou'></span> -->
+					<span class='position'>
+						<em class='iconfont icon-icon'></em>
+						<b>我的位置</b>
+					</span>
+				</div>
+				<div class='stay check-in-date'>
+					<span class='circle'></span>
+					<span class='stayItem checkInDate'>入住日</span>
+					<span class='check-inDate'>7月16日</span>
+					<span class='iconfont icon-jiantouyou check'></span>
+				</div>
+				<div class='stay check-out-date'>
+					<span class='circle'></span>
+					<span class='stayItem checkOutDate'>离开日</span>
+					<span class='check-outDate'><em style='font-style:normal;' class='abc'>7月17日</em>(共计<b class='allNight'>1</b>晚)</span>
+					<span class='iconfont icon-jiantouyou check'></span>
+				</div>
+				<div class='stay'>
+					<span class='circle'></span>
+					<label for="" class='stayItem'>酒店名</label>
+					<input type="text" placeholder='酒店名称(选填)' class='inputName'>
+				</div>
+			</div>
+			<div class='search'>
+				<a href="#"><em class='icon iconfont icon-search'></em>搜索酒店</a>
+			</div>
+		</div>
+		<div class='selectCity' id='selectCity'>	
+			<div class="header">
+				<span class='back iconfont icon-youjiantou'></span>
+				<h2>选择城市</h2>
+			</div>
+			<div class='current'>
+				当前
+			</div>
+			<div class='currentCon'>
+				<p>广州市海珠区新港西路30号</p>
+				<p>
+					<span>广州</span>
+					<span class='iconfont icon-checkbox'></span>
+				</p>
+			</div>
+			<div class='hot current'>
+				热门
+			</div>
+			<div class='hotList'>
+				<li>北京</li>
+				<li>上海</li>
+				<li>广州</li>
+				<li>深圳</li>
+				<li>哈尔滨</li>
+				<li>珠海</li>
+				<li>天津</li>
+				<li>广州</li>
+				<li>广州</li>
+			</div>
+			<div class='current'>
+				更多
+			</div>
+			<div class='moreList'>
+				
+			</div>
+			<div class='citiesFrame'>
+				<!-- <div>
+					<div class='split-line current'>A</div>
+					<ul class='list'>
+						<li>北京</li>
+					</ul>
+				</div> -->
+			</div>
+			
+		</div>
+		<div class='backtop '>
+			<span class='iconfont icon icon-fanhuidingbu'></span>
+		</div>
+
+		<div class='selectCity' id='calendar-wrap'>
+			<div class="header calendar_header">
+				<span class='back iconfont icon-youjiantou calendar_back'></span>
+				<h2>343间酒店</h2>
+				<span class='finish'>完成</span>
+			</div>
+			<div class='checkInTime'>
+				选择入住时间
+			</div>
+			<div class='calendar_title'>
+				<span class='iconfont icon-youjiantou prev'></span>
+				<h3>2014年7月</h3>
+				<span class='iconfont icon-jiantouyou next'></span>
+			</div>
+			<div class='calendar_con'>
+				<div class='calendar_week'>
+					<span>周日</span>
+					<span>周一</span>
+					<span>周二</span>
+					<span>周三</span>
+					<span>周四</span>
+					<span>周五</span>
+					<span>周六</span>
+				</div>
+				<div class='calendar_month'>
+					
+				</div>
+			</div>
+			<div class='bottom'>
+				<span>入住日</span>
+				<span class='checkDate'>7月16日</span>
+			</div>
+			<div class='checkInDays'>
+				<span>住几晚</span>
+				<span>
+					<em class='del'>-</em>
+					<input type="number" value='1' class='countNight'>
+					<em class='add'>+</em>
+				</span>
+			</div>
+		</div>	
+	</div>
+	<script src='../../lib/swiper.js'></script>
+	<script src='../../public/js/index.js'></script>
+	<!--<script src='http://apis.map.qq.com/ws/location/v1/ip?key=2YSBZ-LS536-ICUSD-MSZ6B-Q5B23-OVBDN&output=jsonp&callback=getposition()'></script>-->
+</body>
+</html>
